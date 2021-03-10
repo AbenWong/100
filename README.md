@@ -8,6 +8,7 @@
 
 透明度知识点：
 
+![image](https://user-images.githubusercontent.com/52949416/110599559-f5593b80-81bd-11eb-893c-0923866ddc16.png)
 
 
 ## 写在最后：
