@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url("D:/案例/100案例/img/glass2.png") fixed no-repeat;
+            background-size: cover;
+        }
+        
+        .login-form {
+            width: 500px;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            z-index: 100;
+            background: inherit;
+            border-radius: 18px;
+            overflow: hidden;
+            /* 隐藏多余的模糊效果 */
+        }
+        
+        .login-form::before {
+            content: "";
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            overflow: hidden;
+            background: inherit;
+            box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.25);
+            filter: blur(6px);
+            z-index: -1;
+        }
+        
+        .logo {
+            width: 500px;
+            height: 200px;
+            background: url("D:/案例/100案例/img/glass-logo.png");
+        }
+        
+        .login-form button {
+            margin: 6px 0;
+            height: 36px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            padding: 0 14px;
+            color: #3d5245;
+        }
+        
+        .login-form button {
+            margin-top: 30px;
+            background-color: rgba(57, 88, 69, 0.4);
+            color: white;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        
+        .login-form button:hover {
+            background-color: rgba(12, 80, 38, 0.67);
+        }
+        
+        .login-form button:focus {
+            outline: 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" class="login-form">
+            <span class="logo"></span>
+            <a href="./玻璃特效-css新特效backdrop-filter.html"><button type="submit">即刻登录 </a></button>
+
+        </form>
+    </div>
+</body>
+
+</html>
