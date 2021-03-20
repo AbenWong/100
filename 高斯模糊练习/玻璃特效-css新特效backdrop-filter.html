@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backdrop-filter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .content {
+            width: 100vw;
+            height: 100vh;
+            max-width: 100%;
+            background: url("D:/案例/100案例/img/glass1.png") no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .glass {
+            width: 50vw;
+            height: 50vh;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-color: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(27, 0, 37, 0.89);
+            border-radius: 10px;
+        }
+        
+        .content>h1 {
+            position: absolute;
+            padding-left: 5vw;
+            font-size: 12vw;
+            -webkit-line-clamp: 2;
+            background-image: -webkit-linear-gradient(bottom, rgba(245, 134, 89, 1), rgba(245, 181, 101), rgba(177, 146, 109), rgba(208, 182, 133), rgba(137, 168, 213));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .glass h1 {
+            text-align: center;
+            padding-top: 16vh;
+            font-size: 8vw;
+            color: #fff;
+            text-shadow: 1px 1px 12px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Hi! This is backdrop-filter! </h1>
+        <div class="glass">
+            <h1>ABEN</h1>
+        </div>
+    </div>
+</body>
+
+</html>
