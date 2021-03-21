@@ -18,8 +18,9 @@
             width: 100vw;
             height: 100vh;
             max-width: 100%;
-            background: url("D:/案例/100案例/img/glass1.png") no-repeat;
+            background: url("img/glass1.png") no-repeat;
             background-size: cover;
+            /* 响应式图片，将超出部分裁剪 */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -29,6 +30,7 @@
             width: 50vw;
             height: 50vh;
             backdrop-filter: blur(8px);
+            /* 毛玻璃处理 */
             -webkit-backdrop-filter: blur(8px);
             border-color: rgba(255, 255, 255, 0.25);
             box-shadow: 0 8px 32px 0 rgba(27, 0, 37, 0.89);
@@ -40,6 +42,7 @@
             padding-left: 5vw;
             font-size: 12vw;
             -webkit-line-clamp: 2;
+            /* 字体渐进色 */
             background-image: -webkit-linear-gradient(bottom, rgba(245, 134, 89, 1), rgba(245, 181, 101), rgba(177, 146, 109), rgba(208, 182, 133), rgba(137, 168, 213));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
