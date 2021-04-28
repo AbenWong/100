@@ -1,0 +1,206 @@
+* {
+    margin: 0 0 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-left: 10vw;
+}
+
+
+/* flex */
+
+.init {
+    width: 420px;
+    max-width: 100%;
+    margin-left: 40vw;
+    background-size: cover;
+}
+
+.posation {
+    margin-left: 43.5vw;
+}
+
+h2 {
+    margin-left: -15vw;
+    margin-top: 3vh;
+}
+
+h3 {
+    margin-top: 3vh;
+}
+
+.box1 {
+    height: 310px;
+    background-image: url('https://s3-us-west-2.amazonaws.com/public.notion-static.com/98d6f347-ca2d-47b7-bf48-47511630182f/maarten-van-den-heuvel-400626-unsplash.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box0 {
+    height: 310px;
+    background-image: url('https://s3-us-west-2.amazonaws.com/public.notion-static.com/98d6f347-ca2d-47b7-bf48-47511630182f/maarten-van-den-heuvel-400626-unsplash.jpg');
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.content {
+    font-size: 6vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 8px 32px 0 rgba(27, 0, 37, 0.89);
+}
+
+.con1 {
+    background-image: -webkit-linear-gradient(bottom, rgba(66, 133, 244), rgba(234, 67, 53), rgba(251, 188, 5), rgba(52, 168, 83));
+}
+
+.con2 {
+    background-image: -webkit-linear-gradient(top, rgba(66, 133, 244), rgba(234, 67, 53), rgba(251, 188, 5), rgba(52, 168, 83));
+}
+
+.box2 {
+    height: 518px;
+    background-image: url('https://s3-us-west-2.amazonaws.com/public.notion-static.com/88676b3e-f102-4307-a850-8c1cf98f7794/edgar-castrejon-459814-unsplash.jpg');
+    font-size: 2vw;
+    color: aliceblue;
+}
+
+
+/* 标准流 */
+
+.standard {
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(27, 0, 37, 0.89);
+}
+
+.standard1 {
+    /* 行内元素用 text-align: center;行高设置为与盒子同高 */
+    text-align: center;
+    line-height: 9.6rem;
+    height: 9.6rem;
+}
+
+.standard2 {
+    height: 30%;
+}
+
+.standard2 p {
+    /* 单个块级元素水平居中，记得给大小哦！ */
+    width: 16rem;
+    height: 9.6rem;
+    margin: auto;
+    text-align: center;
+    line-height: 9.6rem;
+}
+
+.standard3 {
+    height: 13rem;
+    text-align: center;
+    line-height: 4.3rem;
+    /*   border: solid 1px black; */
+}
+
+.standard3 p {
+    display: inline-block;
+    width: 20rem;
+    height: 4.3rem;
+    border: solid 1px red;
+}
+
+.box34_init {
+    width: 20rem;
+    height: 9rem;
+    border-radius: .9375rem;
+}
+
+.box3 {
+    background-color: #4285f4;
+    position: relative;
+}
+
+.p_init {
+    font-size: 2rem;
+    color: aliceblue;
+    width: 150px;
+    height: 100px;
+    border-radius: .9375rem;
+    background-color: #fbbc05;
+    text-align: center;
+    line-height: 100px;
+}
+
+.posation1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -75px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.posation2 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.posation3 {
+    position: absolute;
+    /* 运算符前后需要保留空格才有用 */
+    left: calc(50% - 75px);
+    top: calc(50% - 50px);
+}
+
+.box4 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ea4335;
+}
+
+.box4 p {
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.box5 {
+    position: relative;
+    background-color: #34a853;
+}
+
+.box5 p {
+    font-size: 2rem;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box6 {
+    position: relative;
+    background-color: #4285f4;
+    text-align: center;
+}
+
+.box6::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.bluebox {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2rem;
+    color: aliceblue;
+}
