@@ -10,7 +10,11 @@
 
 ![image](https://user-images.githubusercontent.com/52949416/110599559-f5593b80-81bd-11eb-893c-0923866ddc16.png)
 
+高斯模糊练习：
+![image](https://github.com/ohsogasne/100/blob/master/img/GaussianBlur.png)
 
+十一个居中练习：
+![image](https://github.com/ohsogasne/100/blob/master/img/ElevenCenter.png)
 ## 写在最后：
 
 山水有相逢，愿各位前进路途不再有阴霾，做夜空中最亮的那颗星，我们下期再见！！！
